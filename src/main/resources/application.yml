@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: verdurasia-backend
+  profiles:
+    active: dev
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+logging:
+  level:
+    com.verdurasia: INFO

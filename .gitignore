@@ -1,0 +1,73 @@
+# ============================================================
+# Maven build output
+# ============================================================
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ============================================================
+# Spring Boot / application credentials
+# ============================================================
+# Ignora perfiles con credenciales reales; sube solo application.yml y application-dev.yml
+# Si en el futuro creas application-prod.yml con contraseñas reales, agrégalo aquí:
+# src/main/resources/application-prod.yml
+*.env
+.env
+.env.*
+!.env.example
+
+# ============================================================
+# Logs
+# ============================================================
+*.log
+logs/
+spring.log
+
+# ============================================================
+# IDEs
+# ============================================================
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse / STS
+.classpath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# NetBeans
+nbactions.xml
+nb-configuration.xml
+
+# VS Code
+.vscode/
+
+# ============================================================
+# OS
+# ============================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================================
+# Archivos temporales / de sistema
+# ============================================================
+*.tmp
+*.bak
+*.swp
+*~
+*.orig
+
+# ============================================================
+# Docker
+# ============================================================
+# No ignorar docker-compose.yml (es parte del proyecto)
+# Ignorar overrides locales con credenciales
+docker-compose.override.yml
+docker-compose.local.yml
