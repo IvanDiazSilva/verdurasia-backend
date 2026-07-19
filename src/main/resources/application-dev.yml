@@ -19,6 +19,14 @@ spring:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          # Keycloak corre en puerto 8180 (docker-compose).
+          # Spring descarga automáticamente el JWKS desde este issuer para validar tokens.
+          issuer-uri: http://localhost:8180/realms/verdurasia
+
 springdoc:
   api-docs:
     path: /api/v3/api-docs
